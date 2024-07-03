@@ -45,29 +45,91 @@ position: absolute;
     font-size: 40px;
   }
   .image5{
-    top: 22% !important;
-    height: 13% !important;
+    top: 100% !important;
+    height: 90% !important;
+  }
+   .image5Text h2, .oe{
+    font-size: 35px;
+  }
+  .hbl{
+    font-size: 35px;
+    border-bottom: #16214f 3px solid !important;
+  }
+}
+@media only screen and (max-width: 600px){
+  .image5{
+    top: 130% !important;
+    height: 50% !important;
+    width: 75% !important;
+    margin-left: -10%;
+  }
+  .image5Text{
+    font-size: 10px;
+  }
+  .image5Text h2, .oe{
+    font-size: 22px;
+  }
+  .container2{
+    top: 400px !important;
+  }
+  .container3{
+    margin-left: -15px;
+    width: 58% !important;
+  }
+  .container3 p{
+    font-size: 10px;
+  }
+  .hbl{
+    margin-left: 10px !important;
+    font-size: 22px;
+  }
+  .image6{
+    top: 10% !important;
+    margin-left: 80% !important;
+    height: 60% !important;
+    width: 88% !important;
   }
 }
 .image5div{
-  width: 100%;
+  width: 50%;
   height: 50%;
 }
 .image5{
   position: absolute; 
-  top: 50%;
+  top: 140%;
   width: 50%;
-  height: 60vh;
+  height: 65vh;
 }
 
 .image5Text {
   position: relative;
   text-align: justify;
-  width: 50%;
-  padding: 20px;
-  margin-left: 50%;
+  width: 100%;
+  padding-right: 10px;
+  margin-left: 25%;
   top: 500px;
 }
+.container2{
+  position: relative;
+  top: 465px;
+}
+.hbl{
+  margin-left: 25px;
+  color: #16214f;
+  border-bottom: #16214f 5px solid;
+  width: 40%;
+  padding-bottom: 13px;
+}
+.container3{
+  padding: 25px;
+  position: relative;
+  width: 50%;
+  margin-right: 50%;
+}
 .image6{
-
+  position: absolute; 
+  top: -15%;
+  width: 105%;
+  height: 105%;
+  margin-left: 90%;
 }
