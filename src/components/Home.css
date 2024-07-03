@@ -1,0 +1,73 @@
+.homeSection1{
+width: 100%;
+position: absolute;
+}
+.homeSection1 .carousel-item {
+  height: 450px; 
+  position: relative;
+}
+.homeimage{
+  width: 100%;
+  position: relative;
+  height: auto; 
+  object-fit: cover;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.homeimage1,
+.homeimage2,
+.homeimage3,
+.homeimage4 {
+  height: 100%; 
+  width: 100%;
+}
+.carousel-caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+}
+.carousel-caption h1 {
+  font-size: 65px; /* Adjust the font size as needed */
+}
+.textContainer{
+  position: relative;
+  display: flex;
+}
+@media screen and (max-width: 768px){
+  .carousel-caption h1{
+    font-size: 40px;
+  }
+  .image5{
+    top: 40% !important;
+    height: 20% !important;
+  }
+}
+.image5div{
+  position: relative;
+  width: 100%;
+}
+.image5{
+  position: absolute; 
+  top: 120.5%;
+  width: 50%;
+  height: 60vh;
+}
+
+.image5Text {
+  position: relative;
+  text-align: justify;
+  width: 50%;
+  padding: 20px;
+  margin-left: 50%;
+  top: 500px;
+}
+.image6{
+
+}

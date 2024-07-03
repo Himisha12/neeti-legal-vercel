@@ -1,0 +1,17 @@
+.container7{
+  background-color: #e2e4ed;
+  width: 100%;
+}
+.connect{
+  color: #fff;
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-align: center;
+  text-shadow: 7px 7px 7px #6b6464;
+}
+@media screen and (max-width: 768px){
+  .connect{
+    font-size: 50px;
+  }
+}
