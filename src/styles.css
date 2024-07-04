@@ -85,6 +85,15 @@ body, h1, h2, p {
   flex-direction: column;
   margin-top: 20px;
 }
+.navbarr a{
+    text-decoration: none;
+    color: #16214f;
+    font-size: 20px;
+    font-weight: 500;
+}
+.navbarr a.active {
+    border-bottom: 2px solid #d5984e;
+  }
 .navbar1{
     display: none;
 }
