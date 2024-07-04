@@ -24,6 +24,7 @@ function App() {
     <Router>
       <div>
         <header>
+        <div className='navdesign'>
         <Link to="/home">
           <div className="logo">
             <img src={logo} alt="Neeti Legal Logo" width="220" height="70"></img>
@@ -38,8 +39,9 @@ function App() {
             <Link to="/contact-us">Contact Us</Link>
             </div>
              
-             </div>
+          </div>
           </nav>
+        </div>
         </header>
 
         <Routes>

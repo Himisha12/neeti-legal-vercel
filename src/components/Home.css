@@ -66,7 +66,7 @@ position: absolute;
   .image5Text{
     font-size: 10px;
   }
-  .image5Text h2, .oe{
+  .image5Text h2, .oe, .op, .heading2, .head3, .yic{
     font-size: 22px;
   }
   .container2{
@@ -76,18 +76,62 @@ position: absolute;
     margin-left: -15px;
     width: 58% !important;
   }
-  .container3 p{
+  .container3 p, .list, .para{
     font-size: 10px;
   }
   .hbl{
+    top: 100% !important;
     margin-left: 10px !important;
     font-size: 22px;
   }
   .image6{
-    top: 10% !important;
+    top: 2% !important;
     margin-left: 80% !important;
     height: 60% !important;
     width: 88% !important;
+  }
+  .container4{
+    position: absolute !important;
+    top: 165% !important;
+    margin-left: -16px ;
+    width: 60%;
+  }
+  .list{
+    margin-left: -16px;
+  }
+  .container6{
+    position: absolute !important;
+    height: 60% !important;
+    top: 205%  !important;
+  }
+  .heading2{
+    position: absolute !important;
+    top: 148% !important;
+  }
+  .head3{
+    position: absolute !important;
+    top: 168% !important;
+  }
+  .para{
+    position: absolute !important;
+    top: 178% !important;
+  }
+  .scrollBox{
+    width: 90% !important;
+    height: 80%;
+    margin: -5% 5% 0 5% !important;
+  }
+ 
+  .scrollContent{
+    font-size: 10px !important;
+  }
+  .scrolll{
+    font-size: 18px;
+  }
+  
+  .footer{
+    position: absolute !important;
+    top: 400% !important;
   }
 }
 .image5div{
@@ -113,6 +157,7 @@ position: absolute;
   position: relative;
   top: 465px;
 }
+
 .hbl{
   margin-left: 25px;
   color: #16214f;
@@ -128,8 +173,99 @@ position: absolute;
 }
 .image6{
   position: absolute; 
-  top: -15%;
+  top: -17%;
   width: 105%;
-  height: 105%;
-  margin-left: 90%;
+  height: 110%;
+  margin-left: 91%;
+}
+.container4{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 450px;
+  margin-right: 50%;
+  padding: 25px;
+}
+.list{
+  margin-right: 15%;
+}
+.blue{
+  font-weight: bolder;
+}
+.heading2{
+  top: 90px;
+  position: relative;
+  color: #16214f;
+  margin-left: 50%;
+  border-bottom: #16214f 5px solid;
+  width: 50%;
+  padding-bottom: 13px;
+  text-align: center;
+}
+.head3{
+  top:90px;
+  position: relative;
+  color: #16214f;
+  margin-left: 53%;
+}
+.para{
+  top: 90px;
+  margin-left: 53%;
+  position: relative;
+  padding-right: 10px;
+}
+
+.container6{
+  position: absolute;
+  top: 305%;
+  /* top: 133vw !important; */
+  width: 100%;
+  height: 100%;
+}
+.scrollBox {
+  width: 70%;
+  position: absolute;
+  bottom: 0px;
+  /* left: 15%; */
+  margin: 0 15% 0 15%;
+  top: 90px;
+  margin-bottom: 29px;
+  padding: 2%;
+  transform: translateX(-50%);
+  background-image: url('../image/home7.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-color: rgba(255, 255, 255, 0.2);
+  border: #d5984e 1px solid;
+  overflow-y: auto;
+  animation: slideUp 5s ease forwards;
+ 
+}
+.scrollContent {
+  color: #fff;
+  font-size: 16px;
+  /* width: 800px; */
+  text-align: justify;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.yic{
+  position: relative;
+  top: 20px;
+  color: #d5984e;
+  text-align: center;
+  font-weight: 700;
+
+}
+.footer{
+  top: 660px;
+ position: relative;
 }
