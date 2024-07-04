@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import PracticeArea from './components/PracticeArea';
 import ContactUs from './components/ContactUs';
 import { GiHamburgerMenu } from "react-icons/gi";
+import { motion } from "framer-motion";
+import { MdClose } from "react-icons/md";
 // import Careers from './components/Careers';
 import NewsAndInsights from './components/NewsAndInsights';
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -18,31 +20,50 @@ import logo from './image/logo.png';
 
 import './styles.css';
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
 
   
   return (
     <Router>
       <div>
         <header>
-        <div className='navdesign'>
         <Link to="/home">
           <div className="logo">
             <img src={logo} alt="Neeti Legal Logo" width="220" height="70"></img>
           </div>
           </Link>
           <nav>
-          <div className="navbar" id="navlinks">
+          <div className={`navbar ${isOpen ? "active" : ""}`} id="navlinks">
           <div className="navbar1">
             <Link to="/home">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/practice-area">Practice Area</Link>
             <Link to="/contact-us">Contact Us</Link>
-            </div>
-             
+            </div>  
           </div>
+          <div className="hamburger-menu" onClick={toggleMenu}>
+              <GiHamburgerMenu size={30} />
+            </div>
           </nav>
-        </div>
         </header>
+        <motion.div
+          className="sidebar"
+          initial={{ x: '-100%' }}
+          animate={{ x: isOpen ? 0 : '-100%' }}
+          transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+        >
+          <div className="navbarr">
+            <Link to="/home" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>
+            <Link to="/practice-area" onClick={() => setIsOpen(false)}>Practice Area</Link>
+            <Link to="/contact-us" onClick={() => setIsOpen(false)}>Contact Us</Link>
+          </div>
+        </motion.div>
 
         <Routes>
           <Route path="/" element={<Home />} index/>
