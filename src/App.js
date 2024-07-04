@@ -57,6 +57,9 @@ function App() {
           animate={{ x: isOpen ? 0 : '-100%' }}
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
         >
+        <div className="sidebar-header">
+            <MdClose size={30} onClick={toggleMenu} />
+          </div>
           <div className="navbarr">
             <Link to="/home" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/about" onClick={() => setIsOpen(false)}>About</Link>

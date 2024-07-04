@@ -44,7 +44,10 @@ body, h1, h2, p {
   .navbar1 {
     display: flex;
   }
-  
+  .sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+  }
   nav a {
     color: #16214f;
     text-align: center;

@@ -94,6 +94,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faInstagram}
+              className="icon"
               size="2x"
               style={{ color: "#16214f", margin: "5px 10px 0px 40px" }}
             ></FontAwesomeIcon>
@@ -105,6 +106,7 @@ function Footer() {
           >
             <FontAwesomeIcon
               icon={faLinkedin}
+              className="icon"
               size="2x"
               style={{ color: "#16214f", margin: "5px 0px 0px 0px" }}
             ></FontAwesomeIcon>

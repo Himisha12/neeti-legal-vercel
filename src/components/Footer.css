@@ -1,17 +1,183 @@
 .container7{
-  background-color: #e2e4ed;
-  width: 100%;
+  /* margin-top: 800%; */
+  /* position: absolute; */
+ /* height: 400px; */
+ background-color: #E2E4ED;
+ /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  margin-bottom: 0px;
 }
 .connect{
-  color: #fff;
   font-size: 100px;
   font-weight: 800;
-  letter-spacing: 10px;
+  color: #fff;
+  text-shadow: 7px 7px 7px #6B6464;
   text-align: center;
-  text-shadow: 7px 7px 7px #6b6464;
+  letter-spacing: 10px;
+}
+#number{
+  margin-right: 80px;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 200px;
+}
+
+.iconCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0px 10px 0px 50px;
+  margin-bottom: 20px;
+  /* margin: 10px 20px; */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  color: #16214f;
+  font-size: 40px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px; /* Add margin between icons and contact information */
+}
+
+.contactLink {
+  color: #665E5E;
+  font-size: 25px;
+  text-decoration: none; /* Remove underline */
+  margin-bottom: 5px; /* Adjust margin between contact links */
+}
+#number{
+  margin-bottom: 10px;
+}
+#mail{
+  margin-bottom: 25px !important;
+}
+.contactLink:hover {
+  transform: scale(1.1); /* Enlarge the contact link on hover */
 }
 @media screen and (max-width: 768px){
+  .container7{
+    width: 100%;
+    margin-bottom: -5%;
+  }
   .connect{
     font-size: 50px;
   }
+  .iconWrapper{
+    margin-left: 3%;
+  }
+  .contactInfo{
+    margin: 0 2px;
+  }
+  .iconCircle{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    margin-left: 10px;
+  }
+  .icon{
+    font-size: 20px;
+  }
+  #number, #mail{
+    margin-bottom: 0% !important;
+  }
+  .contactLink{
+    font-size: 10px;
+  }
+  .quicklinks span{
+    font-size: 12px !important;
+    margin: 10px !important;
+  }
+  .followtext{
+    font-size: 20px;
+  }
+  .quicklinks{
+    margin-left: 2%;
+    padding: 5px !important;
+  }
+  .inslink{
+   margin-left: -10% !important;
+  }
+  .follow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .last{
+    font-size: 12px !important;
+  }
+}
+.quicklinks {
+  background-color: #E2E4ED; 
+  padding: 10px;
+}
+.quicklinks span{
+  position: relative;
+  color: #16214f;
+  font-size: 25px;
+  margin:40px;
+  margin-left: 110px;
+  transition: transform 0.3s ease;
+}
+.quicklinks span:hover {
+  border-bottom: 3px solid #16214f; 
+  font-size: 28px;
+}
+.inslink{
+margin-left: 44%;
+}
+.follow a:hover{
+ font-size: 20px;
+}
+.decide {
+  border-radius: 0; 
+  transition: border-radius 0.3s; 
+}
+.decide:hover {
+  border-radius: 13px;
+}
+.last{
+  /* margin-left: 32%; */
+}
+
+.accdec{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+ margin-left: 68% ;
+ margin-right: 0% !important;
+}
+.acceptButton {
+  margin: 3% !important;
+  width: 150px !important;
+  padding: 15px 25px !important;
+  background: #001f3f;
+  color: #fff;
+  
+  /* margin-left: 160% !important; */
+  border: none;
+}
+
+.declineButton {
+  margin: 3% !important;
+  width: 150px !important;
+  height: 60px !important;
+  padding: 15px 25px !important;
+  background: #d9d9d9;
+  border: none;
 }
