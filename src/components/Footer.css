@@ -203,3 +203,25 @@ margin-left: 44%;
     font-size: 15px;
   }
 }
+@media screen and (max-width: 390px){
+  .disclaimerHead{
+    font-size: 20px;
+  }
+  .disclaimerText{
+    font-size: 10px;
+  }
+  .disclaimer{
+    width: 95%;
+    border-radius: 5px;
+  }
+  .accdec{
+    margin-left: 15%;
+  }
+  .acceptButton, .declineButton{
+    padding: 5px 5px !important;
+    width: 100px !important;
+    height: 40px !important;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+}
