@@ -134,6 +134,27 @@ position: absolute;
     top: 265% !important;
   }
 }
+@media screen and (max-width: 390px){
+  .heading2{
+    top: 180% !important;
+  }
+  .container6{
+    top: 250% !important;
+  }
+  .head3{
+    top: 205% !important;
+  }
+  .para{
+    top: 218% !important;
+  }
+  .container4{
+    top: 200% !important;
+  }
+  .container7{
+    position: relative;
+    top: 77vw !important;
+  }
+}
 @media screen and (max-width: 375px){
 .heading2{
   top: 190% !important;
