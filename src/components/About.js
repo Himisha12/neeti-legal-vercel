@@ -88,7 +88,7 @@ const About = () => {
       content: 'In the era of innovation and creativity, safeguarding intellectual property has become a critical aspect of business strategy. Our IPR team comprises skilled attorneys who understand the intricacies of patents, trademarks, copyrights, and trade secrets. Whether you are a tech startup protecting your innovations or a creative artist preserving your work, our experts provide comprehensive legal solutions that uphold your intellectual property rights.'
     },
     {
-      title: 'Mediation/Arbitration/Negotiation',
+      title: 'Mediation/ Arbitration/ Negotiation',
       content: 'Legal disputes can be lengthy and expensive, but our mediation, arbitration, and negotiation experts are adept at finding cost-effective and efficient solutions. We are skilled in facilitating amicable resolutions, reducing litigation time and costs, and ensuring that our clients’ interests are protected during negotiations or dispute resolution processes.'
     },
     {
@@ -120,7 +120,9 @@ const About = () => {
   return (
     <div >
       <div className='aboutSection'>
+        <div className='aboutSectionImage'>
         <img src={aboutImage1} alt='aboutImage1' className='image1'></img>
+        </div>
         <div className='aboutText' style={{fontFamily: "Nanum Myeongjo, serif"}}>
           <h1 style={{color: '#16214f', textAlign: 'center'}}>About Neeti Legal</h1>
           <p>Neeti Legal is a new-age law firm, where cutting-edge technology meets legal expertise to revolutionize your experience. Founded by legal minds honed at top-tier institutions and renowned firms, we bring a fresh perspective to navigating the legal landscape.
@@ -158,10 +160,16 @@ const About = () => {
  
           </div>
             <div className='expertise1'>
+              <div>
               <h1 className='expertiseText' style={{fontFamily: 'Playfair Display, serif'}}>OUR EXPERTISE</h1>
+              </div>
               <div className='aboutImage23'>
-              <img src={aboutImage2} className='about2'alt='Aboutimage2' style={{marginRight: '0%'}}></img>
+              <div className='about2Box'>
+              <img src={aboutImage2} className='about2' alt='Aboutimage2' style={{marginRight: '0%'}}></img>
+              </div>
+              <div className='about3Box'>
               <img src={aboutImage3} className='about3' alt='About Image 3' style={{ marginLeft: '-15%' }}/>
+              </div>
             </div>
           </div>
         </div>

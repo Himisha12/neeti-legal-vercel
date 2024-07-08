@@ -1,0 +1,260 @@
+.aboutSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.aboutText{
+    width: 70%;
+    text-align: justify;
+    margin: 2%;
+}
+.image1{
+    width: 100%;
+}
+.expertiseAreas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #EFEFFC;
+}
+.accordion{
+    width: 90%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.accordionContainer{
+    margin-left: 5%;
+}
+.accordionTitle{
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
+.expertise1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.expertiseText{
+    position: absolute;
+    top: 115% !important;
+    margin-left: -10%;
+    width: 30%;
+}
+  .aboutImage23{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+ .about3Box{
+    width: 0%;
+    margin-right: -10%;
+  }
+  .about2Box{
+    width: 47%;
+    margin: 10% -10% 30% 0%;
+  }
+  .about2{
+    width: 400px;
+  }
+  .about3{
+    width: 360px;
+  }
+  .plus-sign-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+  }
+  .plus-sign-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Adjust the size of the circle */
+    height: 30px; /* Adjust the size of the circle */
+    background-color: #16214f;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plus-sign,
+  .minus-sign {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 7px;
+    transition: transform 0.3s;
+  }
+  .expanded .plus-sign {
+    transform: rotate(45deg);
+  }
+  
+  .expanded .minus-sign {
+    transform: rotate(-45deg);
+  }
+  .MuiAccordionSummary-root .accordionTitle {
+    color: #16214f;
+  }
+  .founders{
+    background-color: #EFEFFC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .foundersection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .founders h1{
+    text-align: center;
+    color: #16214f;
+    font-weight: bold;
+  } 
+  .containar{
+    width: calc(50% - 65px);
+    height: 300px;
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.containar p, .fcontainer2 p{
+  top: 45%;
+  position: absolute;
+  font-size: 20px;
+}
+.containar p{
+  top: 41%;
+}
+.fcontainer2{
+  top: 100%;
+  width: calc(50% - 65px);
+    height: 300px;
+    margin: 50px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+.lay{
+    width: 108.2%;
+    height: 60vh;
+    background-color: #16214F;
+    clip-path: polygon(0 0, 100% 0, 100% 32%, 58% 32%, 49% 21%, 0 21%);
+    margin-top: -20px;
+    margin-left: -20px;
+    color: white;
+}
+.founder1, .founder2{
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+}
+
+.image-container {
+  position: absolute;
+  top: 50%; 
+  right:710px;
+  transform: translateY(-50%);
+  width: 180px; 
+  height: 180px; 
+  border-radius: 50%; 
+
+  overflow: hidden; 
+  z-index: 1; 
+}
+.image-container2{
+  position: absolute;
+  top: 31%;
+  right: 70px;
+  width: 180px; 
+  height: 180px; 
+  border-radius: 50%; 
+
+  overflow: hidden; 
+  z-index: 1; 
+}
+.image-container img , .image-container2 img{
+  width: 100%;
+  height: auto;
+  scale: 1.2;
+  /* display: block; */
+}
+@media screen and (max-width: 390px){
+  .aboutText h1{
+    font-size: 22px;
+  }
+  .aboutText{
+    font-size: 10px;
+    width: 230%;
+  }
+  .image1{
+    width: 125%;
+  }
+  .accordionContainer{
+    width: 50%;
+  }
+  .MuiAccordionSummary-root .accordionTitle{
+    font-size: 12px !important;
+  }
+  .accordionContent{
+    font-size: 10px !important;
+  }
+  .expertiseText{
+    top: 100% !important;
+    font-size: 22px;
+    width: 50%;
+    margin-left: -25%;
+  }
+ .about2{
+  width: 145%;
+  margin-left: -30%;
+ }
+ .about2Box{
+  z-index: 2;
+ }
+ .about3{
+  position: relative;
+  width: 140px;
+  z-index: 1;
+ }
+ .about3Box{
+  margin-left: -15%;
+ }
+ .foundersection{
+  flex-direction: column;
+ }
+ .containar{
+  position: relative;
+  width: 350px;
+  height: 195px;
+ }
+ .founders h1{
+  margin-top: 10%;
+ }
+ .lay{
+  width: 350px;
+  height: 35vh;
+ }
+ .founder1,.founder2{
+  font-size: 24px;
+ }
+ .containar b{
+  font-size: 18px !important;
+ }
+ .containar p{
+  font-size: 12px;
+  top: 27%;
+ }
+ .image-container{
+  right: 0%;
+  width: 140px;
+  height: 140px;
+  top: 60%;
+ }
+}
