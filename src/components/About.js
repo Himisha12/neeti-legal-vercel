@@ -208,9 +208,7 @@ const About = () => {
           
 
         
-      <div style={{
-        height: '90vh', position: 'relative', backgroundColor: '#E2E4ED'
-      }} className='aboutfooter'>
+      <div className="footer_about">
         <Footer></Footer>
       </div>
           

@@ -229,7 +229,7 @@
  .foundersection{
   flex-direction: column;
  }
- .containar{
+ .containar, .fcontainer2{
   position: relative;
   width: 350px;
   height: 195px;
@@ -244,10 +244,10 @@
  .founder1,.founder2{
   font-size: 24px;
  }
- .containar b{
+ .containar b, .fcontainer2 b{
   font-size: 18px !important;
  }
- .containar p{
+ .containar p, .fcontainer2 p{
   font-size: 12px;
   top: 27%;
  }
@@ -257,4 +257,54 @@
   height: 140px;
   top: 60%;
  }
+ .image-container2{
+  right: 0%;
+  width: 140px;
+  height: 140px;
+  top: 22%;
+ }
+ .footer_about{
+  position: absolute;
+  top: 230%;
+ }
+}
+
+@media screen and (max-width: 600px){
+  .image1{
+    width: 110%;
+  }
+.aboutText h1{
+  font-size: 24px;
+}
+.aboutText{
+  font-size: 12px;
+  width: 150%;
+}
+.expertiseText{
+  top: 95% !important;
+  font-size: 23px;
+}
+.expertise1{
+  float: right;
+}
+.aboutImage23{
+  width: 100%;
+}
+.about2Box{
+  margin-left: -10%;
+}
+.about2, .about3{
+  width: 218px;
+}
+.accordionContainer{
+  position: relative;
+  top: 10px;
+  width: 60%;
+}
+.MuiAccordionSummary-root .accordionTitle{
+  font-size: 18px !important;
+}
+.accordionContent{
+  font-size: 12px !important;
+}
 }
